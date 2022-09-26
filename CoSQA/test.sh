@@ -1,0 +1,19 @@
+python run.py \
+--output_dir=./saved_models \
+--model_type=roberta \
+--config_name=microsoft/graphcodebert-base \
+--model_name_or_path=microsoft/graphcodebert-base \
+--tokenizer_name=roberta-base \
+--do_test \
+--train_data_file=dataset/cosqa_train_aug.jsonl \
+--eval_data_file=dataset/cosqa_valid.jsonl \
+--test_data_file=dataset/cosqa_test.jsonl \
+--retrieval_code_base=dataset/new_code_idx_map.txt \
+--epoch 6 \
+--block_size 256 \
+--train_batch_size 16 \
+--eval_batch_size 64 \
+--learning_rate 5e-5 \
+--max_grad_norm 1.0 \
+--evaluate_during_training \
+--seed 123456
