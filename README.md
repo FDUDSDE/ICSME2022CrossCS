@@ -3,6 +3,7 @@ Code and data for ICSME 2022 research track paper "Cross-Modal Contrastive Learn
 
 ### Dataset
 You can obtain the dataset directly from this [link](https://drive.google.com/drive/folders/18uJ7bkDrVo86HlOqegI01S4LY3FoO8q1?usp=sharing).
+Note that you may need to "gzip -d" the data file to "*.jsonl".
 
 ### Dependency
 - python>=3.6
